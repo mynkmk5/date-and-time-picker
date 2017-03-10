@@ -1,0 +1,2126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   
+    <link href="date_demo/bootstrap.css" rel="stylesheet">
+    
+    <link href="date_demo/bootstrap-datetimepicker.css" rel="stylesheet">
+
+       <script src="date_demo/jquery.js"></script>
+
+        <script src="date_demo/bootstrap-dropdown.js"></script>
+    
+    <script src="date_demo/bootstrap-datetimepicker.min.js"></script>
+    <style type="text/css">
+      
+      .cnt{
+        margin-top: 0px;
+        padding:15px 150px;
+      }
+      .color{
+
+        background-color:#cad5d5; 
+        color:black;
+      }
+      h4{
+
+        text-align: center;
+        color:blue;
+      }
+
+    </style>
+
+   
+ 
+</head>
+
+<body data-spy="scroll" data-target=".bs-docs-sidebar">
+  <div class="container color">
+  <h4>Simple Date And Time picker Demo</h4>
+<center class="cnt">
+                <section id="demo_position">
+                   
+                            <div class="input-append date form_datetime5" data-picker-position="bottom-left">
+                                <input size="16" type="text" value="" readonly="">
+                                <span  class="add-on"><i width="50px" class="icon-th">D</i></span>
+                            </div>
+                            
+                       
+                   
+                </section>
+
+                </center>
+                </div>
+      
+   
+ 
+    
+   
+    <!-- Analytics
+  ================================================== -->
+    <script type="text/javascript">
+    $('a[href^="#"]').click(function() {
+        var the_id = $(this).attr("href");
+        $('html, body').animate({
+            scrollTop: $(the_id).offset().top
+        }, 'slow');
+        return false;
+    });
+
+    $(".form_datetime1").datetimepicker({
+        format: 'yyyy-mm-dd hh:ii',
+        forceParse: true
+    });
+    $(".form_datetime2").datetimepicker({
+        format: "dd MM yyyy - hh:ii"
+    });
+    $(".form_datetime3").datetimepicker({
+        format: "dd MM yyyy - hh:ii",
+        autoclose: true,
+        todayBtn: true,
+        startDate: "2013-02-14 10:00",
+        minuteStep: 10
+    });
+    $(".form_datetime4").datetimepicker({
+        format: "dd MM yyyy - hh:ii",
+        linkField: "mirror_field",
+        linkFormat: "yyyy-mm-dd hh:ii"
+    });
+    $(".form_datetime5").datetimepicker({
+        format: "dd MM yyyy - hh:ii",
+        autoclose: true,
+        todayBtn: true
+    });
+    $(".form_datetime6").datetimepicker({
+        format: "dd MM yyyy - HH:ii P",
+        autoclose: true,
+        todayBtn: true,
+        showMeridian: true
+    });
+    </script>
+    <div class="datetimepicker datetimepicker-dropdown-bottom-right dropdown-menu" style="left: 494.4px; z-index: 1070;">
+        <div class="datetimepicker-minutes" style="display: none;">
+            <table class=" table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">15 June 2012</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7"><span class="minute">14:00</span><span class="minute">14:05</span><span class="minute">14:10</span><span class="minute">14:15</span><span class="minute">14:20</span><span class="minute">14:25</span><span class="minute">14:30</span><span class="minute">14:35</span><span class="minute">14:40</span><span class="minute active">14:45</span><span class="minute">14:50</span><span class="minute">14:55</span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today" style="display: none;">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="datetimepicker-hours" style="display: none;">
+            <table class=" table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">15 June 2012</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7"><span class="hour">0:00</span><span class="hour">1:00</span><span class="hour">2:00</span><span class="hour">3:00</span><span class="hour">4:00</span><span class="hour">5:00</span><span class="hour">6:00</span><span class="hour">7:00</span><span class="hour">8:00</span><span class="hour">9:00</span><span class="hour">10:00</span><span class="hour">11:00</span><span class="hour">12:00</span><span class="hour">13:00</span><span class="hour active">14:00</span><span class="hour">15:00</span><span class="hour">16:00</span><span class="hour">17:00</span><span class="hour">18:00</span><span class="hour">19:00</span><span class="hour">20:00</span><span class="hour">21:00</span><span class="hour">22:00</span><span class="hour">23:00</span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today" style="display: none;">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="datetimepicker-days" style="display: block;">
+            <table class=" table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">June 2012</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                    <tr>
+                        <th class="dow">Su</th>
+                        <th class="dow">Mo</th>
+                        <th class="dow">Tu</th>
+                        <th class="dow">We</th>
+                        <th class="dow">Th</th>
+                        <th class="dow">Fr</th>
+                        <th class="dow">Sa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="day old">27</td>
+                        <td class="day old">28</td>
+                        <td class="day old">29</td>
+                        <td class="day old">30</td>
+                        <td class="day old">31</td>
+                        <td class="day">1</td>
+                        <td class="day">2</td>
+                    </tr>
+                    <tr>
+                        <td class="day">3</td>
+                        <td class="day">4</td>
+                        <td class="day">5</td>
+                        <td class="day">6</td>
+                        <td class="day">7</td>
+                        <td class="day">8</td>
+                        <td class="day">9</td>
+                    </tr>
+                    <tr>
+                        <td class="day">10</td>
+                        <td class="day">11</td>
+                        <td class="day">12</td>
+                        <td class="day">13</td>
+                        <td class="day">14</td>
+                        <td class="day active">15</td>
+                        <td class="day">16</td>
+                    </tr>
+                    <tr>
+                        <td class="day">17</td>
+                        <td class="day">18</td>
+                        <td class="day">19</td>
+                        <td class="day">20</td>
+                        <td class="day">21</td>
+                        <td class="day">22</td>
+                        <td class="day">23</td>
+                    </tr>
+                    <tr>
+                        <td class="day">24</td>
+                        <td class="day">25</td>
+                        <td class="day">26</td>
+                        <td class="day">27</td>
+                        <td class="day">28</td>
+                        <td class="day">29</td>
+                        <td class="day">30</td>
+                    </tr>
+                    <tr>
+                        <td class="day new">1</td>
+                        <td class="day new">2</td>
+                        <td class="day new">3</td>
+                        <td class="day new">4</td>
+                        <td class="day new">5</td>
+                        <td class="day new">6</td>
+                        <td class="day new">7</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today" style="display: none;">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="datetimepicker-months" style="display: none;">
+            <table class="table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">2012</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7"><span class="month">Jan</span><span class="month">Feb</span><span class="month">Mar</span><span class="month">Apr</span><span class="month">May</span><span class="month active">Jun</span><span class="month">Jul</span><span class="month">Aug</span><span class="month">Sep</span><span class="month">Oct</span><span class="month">Nov</span><span class="month">Dec</span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today" style="display: none;">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="datetimepicker-years" style="display: none;">
+            <table class="table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">2010-2019</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7"><span class="year old">2009</span><span class="year">2010</span><span class="year">2011</span><span class="year active">2012</span><span class="year">2013</span><span class="year">2014</span><span class="year">2015</span><span class="year">2016</span><span class="year">2017</span><span class="year">2018</span><span class="year">2019</span><span class="year old">2020</span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today" style="display: none;">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <div class="datetimepicker datetimepicker-dropdown-bottom-right dropdown-menu" style="left: 713px; z-index: 1330; display: none; top: 923.6px;">
+        <div class="datetimepicker-minutes" style="display: none;">
+            <table class=" table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">14 March 2017</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7"><span class="minute">13:00</span><span class="minute">13:05</span><span class="minute">13:10</span><span class="minute">13:15</span><span class="minute">13:20</span><span class="minute">13:25</span><span class="minute">13:30</span><span class="minute">13:35</span><span class="minute">13:40</span><span class="minute active">13:45</span><span class="minute">13:50</span><span class="minute">13:55</span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today" style="display: none;">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="datetimepicker-hours" style="display: none;">
+            <table class=" table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">14 March 2017</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7"><span class="hour">0:00</span><span class="hour">1:00</span><span class="hour">2:00</span><span class="hour">3:00</span><span class="hour">4:00</span><span class="hour">5:00</span><span class="hour">6:00</span><span class="hour">7:00</span><span class="hour">8:00</span><span class="hour">9:00</span><span class="hour">10:00</span><span class="hour">11:00</span><span class="hour">12:00</span><span class="hour active">13:00</span><span class="hour">14:00</span><span class="hour">15:00</span><span class="hour">16:00</span><span class="hour">17:00</span><span class="hour">18:00</span><span class="hour">19:00</span><span class="hour">20:00</span><span class="hour">21:00</span><span class="hour">22:00</span><span class="hour">23:00</span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today" style="display: none;">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="datetimepicker-days" style="display: block;">
+            <table class=" table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">March 2017</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                    <tr>
+                        <th class="dow">Su</th>
+                        <th class="dow">Mo</th>
+                        <th class="dow">Tu</th>
+                        <th class="dow">We</th>
+                        <th class="dow">Th</th>
+                        <th class="dow">Fr</th>
+                        <th class="dow">Sa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="day old">26</td>
+                        <td class="day old">27</td>
+                        <td class="day old">28</td>
+                        <td class="day">1</td>
+                        <td class="day">2</td>
+                        <td class="day">3</td>
+                        <td class="day">4</td>
+                    </tr>
+                    <tr>
+                        <td class="day">5</td>
+                        <td class="day">6</td>
+                        <td class="day">7</td>
+                        <td class="day">8</td>
+                        <td class="day">9</td>
+                        <td class="day">10</td>
+                        <td class="day">11</td>
+                    </tr>
+                    <tr>
+                        <td class="day">12</td>
+                        <td class="day">13</td>
+                        <td class="day active">14</td>
+                        <td class="day">15</td>
+                        <td class="day">16</td>
+                        <td class="day">17</td>
+                        <td class="day">18</td>
+                    </tr>
+                    <tr>
+                        <td class="day">19</td>
+                        <td class="day">20</td>
+                        <td class="day">21</td>
+                        <td class="day">22</td>
+                        <td class="day">23</td>
+                        <td class="day">24</td>
+                        <td class="day">25</td>
+                    </tr>
+                    <tr>
+                        <td class="day">26</td>
+                        <td class="day">27</td>
+                        <td class="day">28</td>
+                        <td class="day">29</td>
+                        <td class="day">30</td>
+                        <td class="day">31</td>
+                        <td class="day new">1</td>
+                    </tr>
+                    <tr>
+                        <td class="day new">2</td>
+                        <td class="day new">3</td>
+                        <td class="day new">4</td>
+                        <td class="day new">5</td>
+                        <td class="day new">6</td>
+                        <td class="day new">7</td>
+                        <td class="day new">8</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today" style="display: none;">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="datetimepicker-months" style="display: none;">
+            <table class="table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">2017</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7"><span class="month">Jan</span><span class="month">Feb</span><span class="month active">Mar</span><span class="month">Apr</span><span class="month">May</span><span class="month">Jun</span><span class="month">Jul</span><span class="month">Aug</span><span class="month">Sep</span><span class="month">Oct</span><span class="month">Nov</span><span class="month">Dec</span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today" style="display: none;">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="datetimepicker-years" style="display: none;">
+            <table class="table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">2010-2019</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7"><span class="year old">2009</span><span class="year">2010</span><span class="year">2011</span><span class="year">2012</span><span class="year">2013</span><span class="year">2014</span><span class="year">2015</span><span class="year">2016</span><span class="year active">2017</span><span class="year">2018</span><span class="year">2019</span><span class="year old">2020</span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today" style="display: none;">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <div class="datetimepicker datetimepicker-dropdown-bottom-right dropdown-menu" style="left: 739.6px; z-index: 1150;">
+        <div class="datetimepicker-minutes" style="display: none;">
+            <table class=" table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: hidden;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">21 February 2013</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7"><span class="minute">15:00</span><span class="minute">15:10</span><span class="minute active">15:20</span><span class="minute">15:30</span><span class="minute">15:40</span><span class="minute">15:50</span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="datetimepicker-hours" style="display: none;">
+            <table class=" table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: hidden;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">21 February 2013</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7"><span class="hour">0:00</span><span class="hour">1:00</span><span class="hour">2:00</span><span class="hour">3:00</span><span class="hour">4:00</span><span class="hour">5:00</span><span class="hour">6:00</span><span class="hour">7:00</span><span class="hour">8:00</span><span class="hour">9:00</span><span class="hour">10:00</span><span class="hour">11:00</span><span class="hour">12:00</span><span class="hour">13:00</span><span class="hour">14:00</span><span class="hour active">15:00</span><span class="hour">16:00</span><span class="hour">17:00</span><span class="hour">18:00</span><span class="hour">19:00</span><span class="hour">20:00</span><span class="hour">21:00</span><span class="hour">22:00</span><span class="hour">23:00</span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="datetimepicker-days" style="display: block;">
+            <table class=" table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: hidden;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">February 2013</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                    <tr>
+                        <th class="dow">Su</th>
+                        <th class="dow">Mo</th>
+                        <th class="dow">Tu</th>
+                        <th class="dow">We</th>
+                        <th class="dow">Th</th>
+                        <th class="dow">Fr</th>
+                        <th class="dow">Sa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="day old disabled">27</td>
+                        <td class="day old disabled">28</td>
+                        <td class="day old disabled">29</td>
+                        <td class="day old disabled">30</td>
+                        <td class="day old disabled">31</td>
+                        <td class="day disabled">1</td>
+                        <td class="day disabled">2</td>
+                    </tr>
+                    <tr>
+                        <td class="day disabled">3</td>
+                        <td class="day disabled">4</td>
+                        <td class="day disabled">5</td>
+                        <td class="day disabled">6</td>
+                        <td class="day disabled">7</td>
+                        <td class="day disabled">8</td>
+                        <td class="day disabled">9</td>
+                    </tr>
+                    <tr>
+                        <td class="day disabled">10</td>
+                        <td class="day disabled">11</td>
+                        <td class="day disabled">12</td>
+                        <td class="day disabled">13</td>
+                        <td class="day">14</td>
+                        <td class="day">15</td>
+                        <td class="day">16</td>
+                    </tr>
+                    <tr>
+                        <td class="day">17</td>
+                        <td class="day">18</td>
+                        <td class="day">19</td>
+                        <td class="day">20</td>
+                        <td class="day active">21</td>
+                        <td class="day">22</td>
+                        <td class="day">23</td>
+                    </tr>
+                    <tr>
+                        <td class="day">24</td>
+                        <td class="day">25</td>
+                        <td class="day">26</td>
+                        <td class="day">27</td>
+                        <td class="day">28</td>
+                        <td class="day new">1</td>
+                        <td class="day new">2</td>
+                    </tr>
+                    <tr>
+                        <td class="day new">3</td>
+                        <td class="day new">4</td>
+                        <td class="day new">5</td>
+                        <td class="day new">6</td>
+                        <td class="day new">7</td>
+                        <td class="day new">8</td>
+                        <td class="day new">9</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="datetimepicker-months" style="display: none;">
+            <table class="table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: hidden;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">2013</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7"><span class="month disabled">Jan</span><span class="month active">Feb</span><span class="month">Mar</span><span class="month">Apr</span><span class="month">May</span><span class="month">Jun</span><span class="month">Jul</span><span class="month">Aug</span><span class="month">Sep</span><span class="month">Oct</span><span class="month">Nov</span><span class="month">Dec</span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="datetimepicker-years" style="display: none;">
+            <table class="table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: hidden;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">2010-2019</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7"><span class="year old disabled">2009</span><span class="year disabled">2010</span><span class="year disabled">2011</span><span class="year disabled">2012</span><span class="year active">2013</span><span class="year">2014</span><span class="year">2015</span><span class="year">2016</span><span class="year">2017</span><span class="year">2018</span><span class="year">2019</span><span class="year old">2020</span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <div class="datetimepicker datetimepicker-dropdown-bottom-right dropdown-menu" style="left: 739.6px; z-index: 1190;">
+        <div class="datetimepicker-minutes" style="display: none;">
+            <table class=" table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">21 December 2012</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7"><span class="minute">15:00</span><span class="minute">15:05</span><span class="minute">15:10</span><span class="minute">15:15</span><span class="minute">15:20</span><span class="minute active">15:25</span><span class="minute">15:30</span><span class="minute">15:35</span><span class="minute">15:40</span><span class="minute">15:45</span><span class="minute">15:50</span><span class="minute">15:55</span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today" style="display: none;">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="datetimepicker-hours" style="display: none;">
+            <table class=" table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">21 December 2012</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7"><span class="hour">0:00</span><span class="hour">1:00</span><span class="hour">2:00</span><span class="hour">3:00</span><span class="hour">4:00</span><span class="hour">5:00</span><span class="hour">6:00</span><span class="hour">7:00</span><span class="hour">8:00</span><span class="hour">9:00</span><span class="hour">10:00</span><span class="hour">11:00</span><span class="hour">12:00</span><span class="hour">13:00</span><span class="hour">14:00</span><span class="hour active">15:00</span><span class="hour">16:00</span><span class="hour">17:00</span><span class="hour">18:00</span><span class="hour">19:00</span><span class="hour">20:00</span><span class="hour">21:00</span><span class="hour">22:00</span><span class="hour">23:00</span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today" style="display: none;">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="datetimepicker-days" style="display: block;">
+            <table class=" table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">December 2012</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                    <tr>
+                        <th class="dow">Su</th>
+                        <th class="dow">Mo</th>
+                        <th class="dow">Tu</th>
+                        <th class="dow">We</th>
+                        <th class="dow">Th</th>
+                        <th class="dow">Fr</th>
+                        <th class="dow">Sa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="day old">25</td>
+                        <td class="day old">26</td>
+                        <td class="day old">27</td>
+                        <td class="day old">28</td>
+                        <td class="day old">29</td>
+                        <td class="day old">30</td>
+                        <td class="day">1</td>
+                    </tr>
+                    <tr>
+                        <td class="day">2</td>
+                        <td class="day">3</td>
+                        <td class="day">4</td>
+                        <td class="day">5</td>
+                        <td class="day">6</td>
+                        <td class="day">7</td>
+                        <td class="day">8</td>
+                    </tr>
+                    <tr>
+                        <td class="day">9</td>
+                        <td class="day">10</td>
+                        <td class="day">11</td>
+                        <td class="day">12</td>
+                        <td class="day">13</td>
+                        <td class="day">14</td>
+                        <td class="day">15</td>
+                    </tr>
+                    <tr>
+                        <td class="day">16</td>
+                        <td class="day">17</td>
+                        <td class="day">18</td>
+                        <td class="day">19</td>
+                        <td class="day">20</td>
+                        <td class="day active">21</td>
+                        <td class="day">22</td>
+                    </tr>
+                    <tr>
+                        <td class="day">23</td>
+                        <td class="day">24</td>
+                        <td class="day">25</td>
+                        <td class="day">26</td>
+                        <td class="day">27</td>
+                        <td class="day">28</td>
+                        <td class="day">29</td>
+                    </tr>
+                    <tr>
+                        <td class="day">30</td>
+                        <td class="day">31</td>
+                        <td class="day new">1</td>
+                        <td class="day new">2</td>
+                        <td class="day new">3</td>
+                        <td class="day new">4</td>
+                        <td class="day new">5</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today" style="display: none;">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="datetimepicker-months" style="display: none;">
+            <table class="table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">2012</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7"><span class="month">Jan</span><span class="month">Feb</span><span class="month">Mar</span><span class="month">Apr</span><span class="month">May</span><span class="month">Jun</span><span class="month">Jul</span><span class="month">Aug</span><span class="month">Sep</span><span class="month">Oct</span><span class="month">Nov</span><span class="month active">Dec</span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today" style="display: none;">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="datetimepicker-years" style="display: none;">
+            <table class="table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">2010-2019</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7"><span class="year old">2009</span><span class="year">2010</span><span class="year">2011</span><span class="year active">2012</span><span class="year">2013</span><span class="year">2014</span><span class="year">2015</span><span class="year">2016</span><span class="year">2017</span><span class="year">2018</span><span class="year">2019</span><span class="year old">2020</span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today" style="display: none;">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <div class="datetimepicker datetimepicker-dropdown-bottom-left dropdown-menu" style="left: 517px; z-index: 1450; display: none; top: 1462.2px;">
+        <div class="datetimepicker-minutes" style="display: none;">
+            <table class=" table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">16 March 2017</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7"><span class="minute">10:00</span><span class="minute">10:05</span><span class="minute">10:10</span><span class="minute">10:15</span><span class="minute">10:20</span><span class="minute">10:25</span><span class="minute">10:30</span><span class="minute">10:35</span><span class="minute">10:40</span><span class="minute">10:45</span><span class="minute active">10:50</span><span class="minute">10:55</span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="datetimepicker-hours" style="display: none;">
+            <table class=" table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">16 March 2017</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7"><span class="hour">0:00</span><span class="hour">1:00</span><span class="hour">2:00</span><span class="hour">3:00</span><span class="hour">4:00</span><span class="hour">5:00</span><span class="hour">6:00</span><span class="hour">7:00</span><span class="hour">8:00</span><span class="hour">9:00</span><span class="hour active">10:00</span><span class="hour">11:00</span><span class="hour">12:00</span><span class="hour">13:00</span><span class="hour">14:00</span><span class="hour">15:00</span><span class="hour">16:00</span><span class="hour">17:00</span><span class="hour">18:00</span><span class="hour">19:00</span><span class="hour">20:00</span><span class="hour">21:00</span><span class="hour">22:00</span><span class="hour">23:00</span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="datetimepicker-days" style="display: block;">
+            <table class=" table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">March 2017</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                    <tr>
+                        <th class="dow">Su</th>
+                        <th class="dow">Mo</th>
+                        <th class="dow">Tu</th>
+                        <th class="dow">We</th>
+                        <th class="dow">Th</th>
+                        <th class="dow">Fr</th>
+                        <th class="dow">Sa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="day old">26</td>
+                        <td class="day old">27</td>
+                        <td class="day old">28</td>
+                        <td class="day">1</td>
+                        <td class="day">2</td>
+                        <td class="day">3</td>
+                        <td class="day">4</td>
+                    </tr>
+                    <tr>
+                        <td class="day">5</td>
+                        <td class="day">6</td>
+                        <td class="day">7</td>
+                        <td class="day">8</td>
+                        <td class="day">9</td>
+                        <td class="day">10</td>
+                        <td class="day">11</td>
+                    </tr>
+                    <tr>
+                        <td class="day">12</td>
+                        <td class="day">13</td>
+                        <td class="day">14</td>
+                        <td class="day">15</td>
+                        <td class="day active">16</td>
+                        <td class="day">17</td>
+                        <td class="day">18</td>
+                    </tr>
+                    <tr>
+                        <td class="day">19</td>
+                        <td class="day">20</td>
+                        <td class="day">21</td>
+                        <td class="day">22</td>
+                        <td class="day">23</td>
+                        <td class="day">24</td>
+                        <td class="day">25</td>
+                    </tr>
+                    <tr>
+                        <td class="day">26</td>
+                        <td class="day">27</td>
+                        <td class="day">28</td>
+                        <td class="day">29</td>
+                        <td class="day">30</td>
+                        <td class="day">31</td>
+                        <td class="day new">1</td>
+                    </tr>
+                    <tr>
+                        <td class="day new">2</td>
+                        <td class="day new">3</td>
+                        <td class="day new">4</td>
+                        <td class="day new">5</td>
+                        <td class="day new">6</td>
+                        <td class="day new">7</td>
+                        <td class="day new">8</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="datetimepicker-months" style="display: none;">
+            <table class="table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">2017</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7"><span class="month">Jan</span><span class="month">Feb</span><span class="month active">Mar</span><span class="month">Apr</span><span class="month">May</span><span class="month">Jun</span><span class="month">Jul</span><span class="month">Aug</span><span class="month">Sep</span><span class="month">Oct</span><span class="month">Nov</span><span class="month">Dec</span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="datetimepicker-years" style="display: none;">
+            <table class="table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">2010-2019</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7"><span class="year old">2009</span><span class="year">2010</span><span class="year">2011</span><span class="year">2012</span><span class="year">2013</span><span class="year">2014</span><span class="year">2015</span><span class="year">2016</span><span class="year active">2017</span><span class="year">2018</span><span class="year">2019</span><span class="year old">2020</span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <div class="datetimepicker datetimepicker-dropdown-bottom-right dropdown-menu" style="left: 739.6px; z-index: 1270;">
+        <div class="datetimepicker-minutes" style="display: none;">
+            <table class=" table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">21 December 2012</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7">
+                            <fieldset class="minute">
+                                <legend>PM</legend><span class="minute">3:00</span><span class="minute">3:05</span><span class="minute">3:10</span><span class="minute">3:15</span><span class="minute">3:20</span><span class="minute active">3:25</span><span class="minute">3:30</span><span class="minute">3:35</span><span class="minute">3:40</span><span class="minute">3:45</span><span class="minute">3:50</span><span class="minute">3:55</span></fieldset>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="datetimepicker-hours" style="display: none;">
+            <table class=" table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">21 December 2012</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7">
+                            <fieldset class="hour">
+                                <legend>AM</legend><span class="hour hour_am">12</span><span class="hour hour_am">1</span><span class="hour hour_am">2</span><span class="hour hour_am">3</span><span class="hour hour_am">4</span><span class="hour hour_am">5</span><span class="hour hour_am">6</span><span class="hour hour_am">7</span><span class="hour hour_am">8</span><span class="hour hour_am">9</span><span class="hour hour_am">10</span><span class="hour hour_am">11</span></fieldset>
+                            <fieldset class="hour">
+                                <legend>PM</legend><span class="hour hour_pm">12</span><span class="hour hour_pm">1</span><span class="hour hour_pm">2</span><span class="hour active hour_pm">3</span><span class="hour hour_pm">4</span><span class="hour hour_pm">5</span><span class="hour hour_pm">6</span><span class="hour hour_pm">7</span><span class="hour hour_pm">8</span><span class="hour hour_pm">9</span><span class="hour hour_pm">10</span><span class="hour hour_pm">11</span></fieldset>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="datetimepicker-days" style="display: block;">
+            <table class=" table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">December 2012</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                    <tr>
+                        <th class="dow">Su</th>
+                        <th class="dow">Mo</th>
+                        <th class="dow">Tu</th>
+                        <th class="dow">We</th>
+                        <th class="dow">Th</th>
+                        <th class="dow">Fr</th>
+                        <th class="dow">Sa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="day old">25</td>
+                        <td class="day old">26</td>
+                        <td class="day old">27</td>
+                        <td class="day old">28</td>
+                        <td class="day old">29</td>
+                        <td class="day old">30</td>
+                        <td class="day">1</td>
+                    </tr>
+                    <tr>
+                        <td class="day">2</td>
+                        <td class="day">3</td>
+                        <td class="day">4</td>
+                        <td class="day">5</td>
+                        <td class="day">6</td>
+                        <td class="day">7</td>
+                        <td class="day">8</td>
+                    </tr>
+                    <tr>
+                        <td class="day">9</td>
+                        <td class="day">10</td>
+                        <td class="day">11</td>
+                        <td class="day">12</td>
+                        <td class="day">13</td>
+                        <td class="day">14</td>
+                        <td class="day">15</td>
+                    </tr>
+                    <tr>
+                        <td class="day">16</td>
+                        <td class="day">17</td>
+                        <td class="day">18</td>
+                        <td class="day">19</td>
+                        <td class="day">20</td>
+                        <td class="day active">21</td>
+                        <td class="day">22</td>
+                    </tr>
+                    <tr>
+                        <td class="day">23</td>
+                        <td class="day">24</td>
+                        <td class="day">25</td>
+                        <td class="day">26</td>
+                        <td class="day">27</td>
+                        <td class="day">28</td>
+                        <td class="day">29</td>
+                    </tr>
+                    <tr>
+                        <td class="day">30</td>
+                        <td class="day">31</td>
+                        <td class="day new">1</td>
+                        <td class="day new">2</td>
+                        <td class="day new">3</td>
+                        <td class="day new">4</td>
+                        <td class="day new">5</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="datetimepicker-months" style="display: none;">
+            <table class="table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">2012</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7"><span class="month">Jan</span><span class="month">Feb</span><span class="month">Mar</span><span class="month">Apr</span><span class="month">May</span><span class="month">Jun</span><span class="month">Jul</span><span class="month">Aug</span><span class="month">Sep</span><span class="month">Oct</span><span class="month">Nov</span><span class="month active">Dec</span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="datetimepicker-years" style="display: none;">
+            <table class="table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">2010-2019</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7"><span class="year old">2009</span><span class="year">2010</span><span class="year">2011</span><span class="year active">2012</span><span class="year">2013</span><span class="year">2014</span><span class="year">2015</span><span class="year">2016</span><span class="year">2017</span><span class="year">2018</span><span class="year">2019</span><span class="year old">2020</span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <div class="datetimepicker datetimepicker-dropdown-bottom-right dropdown-menu" style="left: 494.4px; z-index: 1070;">
+        <div class="datetimepicker-minutes" style="display: none;">
+            <table class=" table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">15 June 2012</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7"><span class="minute">14:00</span><span class="minute">14:05</span><span class="minute">14:10</span><span class="minute">14:15</span><span class="minute">14:20</span><span class="minute">14:25</span><span class="minute">14:30</span><span class="minute">14:35</span><span class="minute">14:40</span><span class="minute active">14:45</span><span class="minute">14:50</span><span class="minute">14:55</span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today" style="display: none;">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="datetimepicker-hours" style="display: none;">
+            <table class=" table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">15 June 2012</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7"><span class="hour">0:00</span><span class="hour">1:00</span><span class="hour">2:00</span><span class="hour">3:00</span><span class="hour">4:00</span><span class="hour">5:00</span><span class="hour">6:00</span><span class="hour">7:00</span><span class="hour">8:00</span><span class="hour">9:00</span><span class="hour">10:00</span><span class="hour">11:00</span><span class="hour">12:00</span><span class="hour">13:00</span><span class="hour active">14:00</span><span class="hour">15:00</span><span class="hour">16:00</span><span class="hour">17:00</span><span class="hour">18:00</span><span class="hour">19:00</span><span class="hour">20:00</span><span class="hour">21:00</span><span class="hour">22:00</span><span class="hour">23:00</span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today" style="display: none;">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="datetimepicker-days" style="display: block;">
+            <table class=" table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">June 2012</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                    <tr>
+                        <th class="dow">Su</th>
+                        <th class="dow">Mo</th>
+                        <th class="dow">Tu</th>
+                        <th class="dow">We</th>
+                        <th class="dow">Th</th>
+                        <th class="dow">Fr</th>
+                        <th class="dow">Sa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="day old">27</td>
+                        <td class="day old">28</td>
+                        <td class="day old">29</td>
+                        <td class="day old">30</td>
+                        <td class="day old">31</td>
+                        <td class="day">1</td>
+                        <td class="day">2</td>
+                    </tr>
+                    <tr>
+                        <td class="day">3</td>
+                        <td class="day">4</td>
+                        <td class="day">5</td>
+                        <td class="day">6</td>
+                        <td class="day">7</td>
+                        <td class="day">8</td>
+                        <td class="day">9</td>
+                    </tr>
+                    <tr>
+                        <td class="day">10</td>
+                        <td class="day">11</td>
+                        <td class="day">12</td>
+                        <td class="day">13</td>
+                        <td class="day">14</td>
+                        <td class="day active">15</td>
+                        <td class="day">16</td>
+                    </tr>
+                    <tr>
+                        <td class="day">17</td>
+                        <td class="day">18</td>
+                        <td class="day">19</td>
+                        <td class="day">20</td>
+                        <td class="day">21</td>
+                        <td class="day">22</td>
+                        <td class="day">23</td>
+                    </tr>
+                    <tr>
+                        <td class="day">24</td>
+                        <td class="day">25</td>
+                        <td class="day">26</td>
+                        <td class="day">27</td>
+                        <td class="day">28</td>
+                        <td class="day">29</td>
+                        <td class="day">30</td>
+                    </tr>
+                    <tr>
+                        <td class="day new">1</td>
+                        <td class="day new">2</td>
+                        <td class="day new">3</td>
+                        <td class="day new">4</td>
+                        <td class="day new">5</td>
+                        <td class="day new">6</td>
+                        <td class="day new">7</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today" style="display: none;">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="datetimepicker-months" style="display: none;">
+            <table class="table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">2012</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7"><span class="month">Jan</span><span class="month">Feb</span><span class="month">Mar</span><span class="month">Apr</span><span class="month">May</span><span class="month active">Jun</span><span class="month">Jul</span><span class="month">Aug</span><span class="month">Sep</span><span class="month">Oct</span><span class="month">Nov</span><span class="month">Dec</span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today" style="display: none;">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="datetimepicker-years" style="display: none;">
+            <table class="table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">2010-2019</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7"><span class="year old">2009</span><span class="year">2010</span><span class="year">2011</span><span class="year active">2012</span><span class="year">2013</span><span class="year">2014</span><span class="year">2015</span><span class="year">2016</span><span class="year">2017</span><span class="year">2018</span><span class="year">2019</span><span class="year old">2020</span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today" style="display: none;">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <div class="datetimepicker datetimepicker-dropdown-bottom-right dropdown-menu" style="left: 713px; z-index: 1110;">
+        <div class="datetimepicker-minutes" style="display: none;">
+            <table class=" table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">10 March 2017</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7"><span class="minute">11:00</span><span class="minute">11:05</span><span class="minute">11:10</span><span class="minute">11:15</span><span class="minute">11:20</span><span class="minute">11:25</span><span class="minute active">11:30</span><span class="minute">11:35</span><span class="minute">11:40</span><span class="minute">11:45</span><span class="minute">11:50</span><span class="minute">11:55</span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today" style="display: none;">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="datetimepicker-hours" style="display: none;">
+            <table class=" table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">10 March 2017</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7"><span class="hour">0:00</span><span class="hour">1:00</span><span class="hour">2:00</span><span class="hour">3:00</span><span class="hour">4:00</span><span class="hour">5:00</span><span class="hour">6:00</span><span class="hour">7:00</span><span class="hour">8:00</span><span class="hour">9:00</span><span class="hour">10:00</span><span class="hour active">11:00</span><span class="hour">12:00</span><span class="hour">13:00</span><span class="hour">14:00</span><span class="hour">15:00</span><span class="hour">16:00</span><span class="hour">17:00</span><span class="hour">18:00</span><span class="hour">19:00</span><span class="hour">20:00</span><span class="hour">21:00</span><span class="hour">22:00</span><span class="hour">23:00</span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today" style="display: none;">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="datetimepicker-days" style="display: block;">
+            <table class=" table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">March 2017</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                    <tr>
+                        <th class="dow">Su</th>
+                        <th class="dow">Mo</th>
+                        <th class="dow">Tu</th>
+                        <th class="dow">We</th>
+                        <th class="dow">Th</th>
+                        <th class="dow">Fr</th>
+                        <th class="dow">Sa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="day old">26</td>
+                        <td class="day old">27</td>
+                        <td class="day old">28</td>
+                        <td class="day">1</td>
+                        <td class="day">2</td>
+                        <td class="day">3</td>
+                        <td class="day">4</td>
+                    </tr>
+                    <tr>
+                        <td class="day">5</td>
+                        <td class="day">6</td>
+                        <td class="day">7</td>
+                        <td class="day">8</td>
+                        <td class="day">9</td>
+                        <td class="day active">10</td>
+                        <td class="day">11</td>
+                    </tr>
+                    <tr>
+                        <td class="day">12</td>
+                        <td class="day">13</td>
+                        <td class="day">14</td>
+                        <td class="day">15</td>
+                        <td class="day">16</td>
+                        <td class="day">17</td>
+                        <td class="day">18</td>
+                    </tr>
+                    <tr>
+                        <td class="day">19</td>
+                        <td class="day">20</td>
+                        <td class="day">21</td>
+                        <td class="day">22</td>
+                        <td class="day">23</td>
+                        <td class="day">24</td>
+                        <td class="day">25</td>
+                    </tr>
+                    <tr>
+                        <td class="day">26</td>
+                        <td class="day">27</td>
+                        <td class="day">28</td>
+                        <td class="day">29</td>
+                        <td class="day">30</td>
+                        <td class="day">31</td>
+                        <td class="day new">1</td>
+                    </tr>
+                    <tr>
+                        <td class="day new">2</td>
+                        <td class="day new">3</td>
+                        <td class="day new">4</td>
+                        <td class="day new">5</td>
+                        <td class="day new">6</td>
+                        <td class="day new">7</td>
+                        <td class="day new">8</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today" style="display: none;">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="datetimepicker-months" style="display: none;">
+            <table class="table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">2017</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7"><span class="month">Jan</span><span class="month">Feb</span><span class="month active">Mar</span><span class="month">Apr</span><span class="month">May</span><span class="month">Jun</span><span class="month">Jul</span><span class="month">Aug</span><span class="month">Sep</span><span class="month">Oct</span><span class="month">Nov</span><span class="month">Dec</span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today" style="display: none;">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="datetimepicker-years" style="display: none;">
+            <table class="table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">2010-2019</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7"><span class="year old">2009</span><span class="year">2010</span><span class="year">2011</span><span class="year">2012</span><span class="year">2013</span><span class="year">2014</span><span class="year">2015</span><span class="year">2016</span><span class="year active">2017</span><span class="year">2018</span><span class="year">2019</span><span class="year old">2020</span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today" style="display: none;">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <div class="datetimepicker datetimepicker-dropdown-bottom-right dropdown-menu" style="left: 739.6px; z-index: 1150;">
+        <div class="datetimepicker-minutes" style="display: none;">
+            <table class=" table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: hidden;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">21 February 2013</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7"><span class="minute">15:00</span><span class="minute">15:10</span><span class="minute active">15:20</span><span class="minute">15:30</span><span class="minute">15:40</span><span class="minute">15:50</span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="datetimepicker-hours" style="display: none;">
+            <table class=" table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: hidden;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">21 February 2013</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7"><span class="hour">0:00</span><span class="hour">1:00</span><span class="hour">2:00</span><span class="hour">3:00</span><span class="hour">4:00</span><span class="hour">5:00</span><span class="hour">6:00</span><span class="hour">7:00</span><span class="hour">8:00</span><span class="hour">9:00</span><span class="hour">10:00</span><span class="hour">11:00</span><span class="hour">12:00</span><span class="hour">13:00</span><span class="hour">14:00</span><span class="hour active">15:00</span><span class="hour">16:00</span><span class="hour">17:00</span><span class="hour">18:00</span><span class="hour">19:00</span><span class="hour">20:00</span><span class="hour">21:00</span><span class="hour">22:00</span><span class="hour">23:00</span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="datetimepicker-days" style="display: block;">
+            <table class=" table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: hidden;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">February 2013</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                    <tr>
+                        <th class="dow">Su</th>
+                        <th class="dow">Mo</th>
+                        <th class="dow">Tu</th>
+                        <th class="dow">We</th>
+                        <th class="dow">Th</th>
+                        <th class="dow">Fr</th>
+                        <th class="dow">Sa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="day old disabled">27</td>
+                        <td class="day old disabled">28</td>
+                        <td class="day old disabled">29</td>
+                        <td class="day old disabled">30</td>
+                        <td class="day old disabled">31</td>
+                        <td class="day disabled">1</td>
+                        <td class="day disabled">2</td>
+                    </tr>
+                    <tr>
+                        <td class="day disabled">3</td>
+                        <td class="day disabled">4</td>
+                        <td class="day disabled">5</td>
+                        <td class="day disabled">6</td>
+                        <td class="day disabled">7</td>
+                        <td class="day disabled">8</td>
+                        <td class="day disabled">9</td>
+                    </tr>
+                    <tr>
+                        <td class="day disabled">10</td>
+                        <td class="day disabled">11</td>
+                        <td class="day disabled">12</td>
+                        <td class="day disabled">13</td>
+                        <td class="day">14</td>
+                        <td class="day">15</td>
+                        <td class="day">16</td>
+                    </tr>
+                    <tr>
+                        <td class="day">17</td>
+                        <td class="day">18</td>
+                        <td class="day">19</td>
+                        <td class="day">20</td>
+                        <td class="day active">21</td>
+                        <td class="day">22</td>
+                        <td class="day">23</td>
+                    </tr>
+                    <tr>
+                        <td class="day">24</td>
+                        <td class="day">25</td>
+                        <td class="day">26</td>
+                        <td class="day">27</td>
+                        <td class="day">28</td>
+                        <td class="day new">1</td>
+                        <td class="day new">2</td>
+                    </tr>
+                    <tr>
+                        <td class="day new">3</td>
+                        <td class="day new">4</td>
+                        <td class="day new">5</td>
+                        <td class="day new">6</td>
+                        <td class="day new">7</td>
+                        <td class="day new">8</td>
+                        <td class="day new">9</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="datetimepicker-months" style="display: none;">
+            <table class="table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: hidden;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">2013</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7"><span class="month disabled">Jan</span><span class="month active">Feb</span><span class="month">Mar</span><span class="month">Apr</span><span class="month">May</span><span class="month">Jun</span><span class="month">Jul</span><span class="month">Aug</span><span class="month">Sep</span><span class="month">Oct</span><span class="month">Nov</span><span class="month">Dec</span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="datetimepicker-years" style="display: none;">
+            <table class="table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: hidden;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">2010-2019</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7"><span class="year old disabled">2009</span><span class="year disabled">2010</span><span class="year disabled">2011</span><span class="year disabled">2012</span><span class="year active">2013</span><span class="year">2014</span><span class="year">2015</span><span class="year">2016</span><span class="year">2017</span><span class="year">2018</span><span class="year">2019</span><span class="year old">2020</span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <div class="datetimepicker datetimepicker-dropdown-bottom-right dropdown-menu" style="left: 739.6px; z-index: 1190;">
+        <div class="datetimepicker-minutes" style="display: none;">
+            <table class=" table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">21 December 2012</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7"><span class="minute">15:00</span><span class="minute">15:05</span><span class="minute">15:10</span><span class="minute">15:15</span><span class="minute">15:20</span><span class="minute active">15:25</span><span class="minute">15:30</span><span class="minute">15:35</span><span class="minute">15:40</span><span class="minute">15:45</span><span class="minute">15:50</span><span class="minute">15:55</span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today" style="display: none;">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="datetimepicker-hours" style="display: none;">
+            <table class=" table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">21 December 2012</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7"><span class="hour">0:00</span><span class="hour">1:00</span><span class="hour">2:00</span><span class="hour">3:00</span><span class="hour">4:00</span><span class="hour">5:00</span><span class="hour">6:00</span><span class="hour">7:00</span><span class="hour">8:00</span><span class="hour">9:00</span><span class="hour">10:00</span><span class="hour">11:00</span><span class="hour">12:00</span><span class="hour">13:00</span><span class="hour">14:00</span><span class="hour active">15:00</span><span class="hour">16:00</span><span class="hour">17:00</span><span class="hour">18:00</span><span class="hour">19:00</span><span class="hour">20:00</span><span class="hour">21:00</span><span class="hour">22:00</span><span class="hour">23:00</span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today" style="display: none;">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="datetimepicker-days" style="display: block;">
+            <table class=" table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">December 2012</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                    <tr>
+                        <th class="dow">Su</th>
+                        <th class="dow">Mo</th>
+                        <th class="dow">Tu</th>
+                        <th class="dow">We</th>
+                        <th class="dow">Th</th>
+                        <th class="dow">Fr</th>
+                        <th class="dow">Sa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="day old">25</td>
+                        <td class="day old">26</td>
+                        <td class="day old">27</td>
+                        <td class="day old">28</td>
+                        <td class="day old">29</td>
+                        <td class="day old">30</td>
+                        <td class="day">1</td>
+                    </tr>
+                    <tr>
+                        <td class="day">2</td>
+                        <td class="day">3</td>
+                        <td class="day">4</td>
+                        <td class="day">5</td>
+                        <td class="day">6</td>
+                        <td class="day">7</td>
+                        <td class="day">8</td>
+                    </tr>
+                    <tr>
+                        <td class="day">9</td>
+                        <td class="day">10</td>
+                        <td class="day">11</td>
+                        <td class="day">12</td>
+                        <td class="day">13</td>
+                        <td class="day">14</td>
+                        <td class="day">15</td>
+                    </tr>
+                    <tr>
+                        <td class="day">16</td>
+                        <td class="day">17</td>
+                        <td class="day">18</td>
+                        <td class="day">19</td>
+                        <td class="day">20</td>
+                        <td class="day active">21</td>
+                        <td class="day">22</td>
+                    </tr>
+                    <tr>
+                        <td class="day">23</td>
+                        <td class="day">24</td>
+                        <td class="day">25</td>
+                        <td class="day">26</td>
+                        <td class="day">27</td>
+                        <td class="day">28</td>
+                        <td class="day">29</td>
+                    </tr>
+                    <tr>
+                        <td class="day">30</td>
+                        <td class="day">31</td>
+                        <td class="day new">1</td>
+                        <td class="day new">2</td>
+                        <td class="day new">3</td>
+                        <td class="day new">4</td>
+                        <td class="day new">5</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today" style="display: none;">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="datetimepicker-months" style="display: none;">
+            <table class="table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">2012</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7"><span class="month">Jan</span><span class="month">Feb</span><span class="month">Mar</span><span class="month">Apr</span><span class="month">May</span><span class="month">Jun</span><span class="month">Jul</span><span class="month">Aug</span><span class="month">Sep</span><span class="month">Oct</span><span class="month">Nov</span><span class="month active">Dec</span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today" style="display: none;">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="datetimepicker-years" style="display: none;">
+            <table class="table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">2010-2019</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7"><span class="year old">2009</span><span class="year">2010</span><span class="year">2011</span><span class="year active">2012</span><span class="year">2013</span><span class="year">2014</span><span class="year">2015</span><span class="year">2016</span><span class="year">2017</span><span class="year">2018</span><span class="year">2019</span><span class="year old">2020</span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today" style="display: none;">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <div class="datetimepicker datetimepicker-dropdown-bottom-left dropdown-menu" style="left: 571px; z-index: 1230;">
+        <div class="datetimepicker-minutes" style="display: none;">
+            <table class=" table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">10 March 2017</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7"><span class="minute">11:00</span><span class="minute">11:05</span><span class="minute">11:10</span><span class="minute">11:15</span><span class="minute">11:20</span><span class="minute">11:25</span><span class="minute active">11:30</span><span class="minute">11:35</span><span class="minute">11:40</span><span class="minute">11:45</span><span class="minute">11:50</span><span class="minute">11:55</span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="datetimepicker-hours" style="display: none;">
+            <table class=" table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">10 March 2017</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7"><span class="hour">0:00</span><span class="hour">1:00</span><span class="hour">2:00</span><span class="hour">3:00</span><span class="hour">4:00</span><span class="hour">5:00</span><span class="hour">6:00</span><span class="hour">7:00</span><span class="hour">8:00</span><span class="hour">9:00</span><span class="hour">10:00</span><span class="hour active">11:00</span><span class="hour">12:00</span><span class="hour">13:00</span><span class="hour">14:00</span><span class="hour">15:00</span><span class="hour">16:00</span><span class="hour">17:00</span><span class="hour">18:00</span><span class="hour">19:00</span><span class="hour">20:00</span><span class="hour">21:00</span><span class="hour">22:00</span><span class="hour">23:00</span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="datetimepicker-days" style="display: block;">
+            <table class=" table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">March 2017</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                    <tr>
+                        <th class="dow">Su</th>
+                        <th class="dow">Mo</th>
+                        <th class="dow">Tu</th>
+                        <th class="dow">We</th>
+                        <th class="dow">Th</th>
+                        <th class="dow">Fr</th>
+                        <th class="dow">Sa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="day old">26</td>
+                        <td class="day old">27</td>
+                        <td class="day old">28</td>
+                        <td class="day">1</td>
+                        <td class="day">2</td>
+                        <td class="day">3</td>
+                        <td class="day">4</td>
+                    </tr>
+                    <tr>
+                        <td class="day">5</td>
+                        <td class="day">6</td>
+                        <td class="day">7</td>
+                        <td class="day">8</td>
+                        <td class="day">9</td>
+                        <td class="day active">10</td>
+                        <td class="day">11</td>
+                    </tr>
+                    <tr>
+                        <td class="day">12</td>
+                        <td class="day">13</td>
+                        <td class="day">14</td>
+                        <td class="day">15</td>
+                        <td class="day">16</td>
+                        <td class="day">17</td>
+                        <td class="day">18</td>
+                    </tr>
+                    <tr>
+                        <td class="day">19</td>
+                        <td class="day">20</td>
+                        <td class="day">21</td>
+                        <td class="day">22</td>
+                        <td class="day">23</td>
+                        <td class="day">24</td>
+                        <td class="day">25</td>
+                    </tr>
+                    <tr>
+                        <td class="day">26</td>
+                        <td class="day">27</td>
+                        <td class="day">28</td>
+                        <td class="day">29</td>
+                        <td class="day">30</td>
+                        <td class="day">31</td>
+                        <td class="day new">1</td>
+                    </tr>
+                    <tr>
+                        <td class="day new">2</td>
+                        <td class="day new">3</td>
+                        <td class="day new">4</td>
+                        <td class="day new">5</td>
+                        <td class="day new">6</td>
+                        <td class="day new">7</td>
+                        <td class="day new">8</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="datetimepicker-months" style="display: none;">
+            <table class="table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">2017</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7"><span class="month">Jan</span><span class="month">Feb</span><span class="month active">Mar</span><span class="month">Apr</span><span class="month">May</span><span class="month">Jun</span><span class="month">Jul</span><span class="month">Aug</span><span class="month">Sep</span><span class="month">Oct</span><span class="month">Nov</span><span class="month">Dec</span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="datetimepicker-years" style="display: none;">
+            <table class="table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">2010-2019</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7"><span class="year old">2009</span><span class="year">2010</span><span class="year">2011</span><span class="year">2012</span><span class="year">2013</span><span class="year">2014</span><span class="year">2015</span><span class="year">2016</span><span class="year active">2017</span><span class="year">2018</span><span class="year">2019</span><span class="year old">2020</span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <div class="datetimepicker datetimepicker-dropdown-bottom-right dropdown-menu" style="left: 739.6px; z-index: 1270;">
+        <div class="datetimepicker-minutes" style="display: none;">
+            <table class=" table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">21 December 2012</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7">
+                            <fieldset class="minute">
+                                <legend>PM</legend><span class="minute">3:00</span><span class="minute">3:05</span><span class="minute">3:10</span><span class="minute">3:15</span><span class="minute">3:20</span><span class="minute active">3:25</span><span class="minute">3:30</span><span class="minute">3:35</span><span class="minute">3:40</span><span class="minute">3:45</span><span class="minute">3:50</span><span class="minute">3:55</span></fieldset>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="datetimepicker-hours" style="display: none;">
+            <table class=" table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">21 December 2012</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7">
+                            <fieldset class="hour">
+                                <legend>AM</legend><span class="hour hour_am">12</span><span class="hour hour_am">1</span><span class="hour hour_am">2</span><span class="hour hour_am">3</span><span class="hour hour_am">4</span><span class="hour hour_am">5</span><span class="hour hour_am">6</span><span class="hour hour_am">7</span><span class="hour hour_am">8</span><span class="hour hour_am">9</span><span class="hour hour_am">10</span><span class="hour hour_am">11</span></fieldset>
+                            <fieldset class="hour">
+                                <legend>PM</legend><span class="hour hour_pm">12</span><span class="hour hour_pm">1</span><span class="hour hour_pm">2</span><span class="hour active hour_pm">3</span><span class="hour hour_pm">4</span><span class="hour hour_pm">5</span><span class="hour hour_pm">6</span><span class="hour hour_pm">7</span><span class="hour hour_pm">8</span><span class="hour hour_pm">9</span><span class="hour hour_pm">10</span><span class="hour hour_pm">11</span></fieldset>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="datetimepicker-days" style="display: block;">
+            <table class=" table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">December 2012</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                    <tr>
+                        <th class="dow">Su</th>
+                        <th class="dow">Mo</th>
+                        <th class="dow">Tu</th>
+                        <th class="dow">We</th>
+                        <th class="dow">Th</th>
+                        <th class="dow">Fr</th>
+                        <th class="dow">Sa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="day old">25</td>
+                        <td class="day old">26</td>
+                        <td class="day old">27</td>
+                        <td class="day old">28</td>
+                        <td class="day old">29</td>
+                        <td class="day old">30</td>
+                        <td class="day">1</td>
+                    </tr>
+                    <tr>
+                        <td class="day">2</td>
+                        <td class="day">3</td>
+                        <td class="day">4</td>
+                        <td class="day">5</td>
+                        <td class="day">6</td>
+                        <td class="day">7</td>
+                        <td class="day">8</td>
+                    </tr>
+                    <tr>
+                        <td class="day">9</td>
+                        <td class="day">10</td>
+                        <td class="day">11</td>
+                        <td class="day">12</td>
+                        <td class="day">13</td>
+                        <td class="day">14</td>
+                        <td class="day">15</td>
+                    </tr>
+                    <tr>
+                        <td class="day">16</td>
+                        <td class="day">17</td>
+                        <td class="day">18</td>
+                        <td class="day">19</td>
+                        <td class="day">20</td>
+                        <td class="day active">21</td>
+                        <td class="day">22</td>
+                    </tr>
+                    <tr>
+                        <td class="day">23</td>
+                        <td class="day">24</td>
+                        <td class="day">25</td>
+                        <td class="day">26</td>
+                        <td class="day">27</td>
+                        <td class="day">28</td>
+                        <td class="day">29</td>
+                    </tr>
+                    <tr>
+                        <td class="day">30</td>
+                        <td class="day">31</td>
+                        <td class="day new">1</td>
+                        <td class="day new">2</td>
+                        <td class="day new">3</td>
+                        <td class="day new">4</td>
+                        <td class="day new">5</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="datetimepicker-months" style="display: none;">
+            <table class="table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">2012</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7"><span class="month">Jan</span><span class="month">Feb</span><span class="month">Mar</span><span class="month">Apr</span><span class="month">May</span><span class="month">Jun</span><span class="month">Jul</span><span class="month">Aug</span><span class="month">Sep</span><span class="month">Oct</span><span class="month">Nov</span><span class="month active">Dec</span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="datetimepicker-years" style="display: none;">
+            <table class="table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
+                        <th colspan="5" class="switch">2010-2019</th>
+                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7"><span class="year old">2009</span><span class="year">2010</span><span class="year">2011</span><span class="year active">2012</span><span class="year">2013</span><span class="year">2014</span><span class="year">2015</span><span class="year">2016</span><span class="year">2017</span><span class="year">2018</span><span class="year">2019</span><span class="year old">2020</span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="7" class="today">Today</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+   
+</body>
+
+</html>
